@@ -10,3 +10,10 @@ TEST_CASE("test")
 {
 	REQUIRE(test_config() == true);
 }
+
+TEST_CASE("Verify Question 3", "Question 3 verification") {
+	REQUIRE(get_primes(10) == vector<int>{2,3,5,7});
+	REQUIRE(get_primes(15) == vector<int>{2,3,5,7,11,13});
+	REQUIRE(get_primes(30) == vector<int>{2,3,5,7,11,13,17,19,23,29});
+	REQUIRE(get_primes(50) == vector<int>{2,3,5,7,11,13,17,19,23,29,31,37,41,43,47});
+}
